@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />">
+</head>
+
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo">SGF</a>
+
+        <i class="fa-solid fa-bars menu-icon" onclick="toggleMenu()"></i> 
+
+        <script>
+            function toggleMenu() {
+              document.querySelector(".navbar").classList.toggle("active");
+            }
+          </script>
+        
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#acerca-de-mi">Acerca de Mi</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contáctame</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="/img/IMG_3320.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hola, soy Sebastián <span>Giraldo Franco</span></h1><br>
+            <p>Bienvenidos a mi portafolio personal, dónde encontrarán aspectos relevantes 
+            sobre quién soy, proyectos en los que he trabajado, las cosas que me gustan hacer 
+            y la forma en la cuál me pueden encontrar en mis redes sociales 😉</p>
+
+            <div class="social-icon">
+                <a href="https://instagram.com/sebasgiraldo1105"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/sebasgiraldo69"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="acerca-de-mi">
+        <h2 class="heading">Acerca de mi</h2>
+
+        <div class="services-container">
+            <div class="service-box">
+                <div class="services-info">
+                    <h4>¿Quién Soy?</h4>
+                    <p>Hola, mi nombre es Sebastián Giraldo Franco. Soy un estudiante de 19 años de Ingeniería de Sistemas y 
+                        Computación en la Universidad EIA, en Envigado, Antioquia. Nací en Medellín, Colombia y soy 
+                        una persona a la que siempre le han gustado los deportes (en especial el fútbol y el tenis) y los
+                        videojuegos. Me gusta mucho viajar a lugares diferentes junto a mi familia y soy una persona muy 
+                        amable, amigable y carismática. Adicionalmente, me caracterizo por ser inteligente y siempre seguir
+                        adelante pese a las adversidades que se puedan presentar, siendo una persona muy resiliente.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="services-info">
+                    <h4>Mi Vida Académica</h4>
+                    <p>En cuanto a mis estudios académicos, soy egresado de la Fundación Educativa de 
+                        Montelíbano, donde cursé preescolar, primaria y bachillerato, y justo donde 
+                        recibí la bandera de honor al ser uno de los mejores estudiantes de mi promoción. 
+                        Además, recibí reconocimientos especiales en el área de matemáticas y también un 
+                        premio por mi puntaje de icfes. Como mencioné actualmente, me encuentro estudiando 
+                        Ingeniería de Sistemas y Computación en la EIA, donde pienso graduarme y 
+                        posteriormente hacer una especialización en algo que aún está por definir. Actualmente, 
+                        no tengo ninguna experiencia laboral y considero que mis mayores habilidades están en 
+                        el campo matemático, pero quiero indudablemente fortalecer mis habilidades de 
+                        programación, pues es a lo que me quiero dedicar en un futuro cercano.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-images">
+            <img src="/img/IMG_3769.jpg" alt="Imagen 1">
+            <img src="/img/IMG_7003.jpg" alt="Imagen 2">
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+
+
+    <section class="projects" id="proyectos">
+        <h2>Mis Proyectos</h2>
+    
+        <div class="project">
+            <div class="project-box" onclick="toggleVideo('video1')">
+                <h3>Proyecto 1</h3>
+                <p class="project-description">
+                    Este proyecto que fue realizado en el colegio junto a dos compañeros en clase de Tecnología
+                    consistía en una puerta que se abría a medida que uno realizaba un movimiento cercano a ella, 
+                    utilizando sensores que detectaban el movimiento. Las tecnologías que usamos para crear este 
+                    dispositivo fueron Arduino, Tinkercad, Visual Studio, entre otras. Mi rol principal en la 
+                    creación de este proyecto estaba centrado en la construcción de la maqueta para que esta 
+                    funcionara, así como ir a asesorías con un profesor conocedor de la materia para que nos diera 
+                    indicaciones importantes para el buen progreso de nuestro proyecto.
+                    <br><br><strong>Haz clic para ver el video de este proyecto.</strong>
+                </p>
+            </div>
+            <video id="video1" controls class="hidden" muted>
+                <source src="proyecto_1.mp4" type="video/mp4">
+            </video>
+        </div>
+    
+        <div class="project">
+            <div class="project-box1">
+                <h3>Proyecto 2</h3>
+                <p class="project-description">
+                    Este fue el proyecto de grado mío y de dos compañeros más, en el cual grabamos un 
+                    documental sobre una empresa muy importante de la región llamada Cerro Matoso S.A.
+                    Esta es una empresa minera, dedicada a la extracción de níquel para la posterior producción 
+                    de ferroníquel, y fue un tema que rápidamente condujo nuestra atención. Como resultado, 
+                    creamos un documental de 26 minutos (que representó el esfuerzo de un año), donde abordamos 
+                    la historia, el funcionamiento y el compromiso social de una de las empresas mineras más grandes 
+                    de América Latina. Para esto, utilizamos cámaras y micrófonos profesionales, al igual que 
+                    herramientas de edición de video. Mi rol en el proyecto consistió en crear un guion estructurado, 
+                    para saber en qué nos íbamos a enfocar específicamente con el documental, así como realizar 
+                    entrevistas a personas importantes de la empresa que dieran mayor credibilidad al documental.
+                </p><br>
+                <a href="https://drive.google.com/file/d/1oXWPcda-XlBBNuEnV-60k8ubSkCIdOvs/view?usp=sharing" 
+                   target="_blank" class="btn-vid2">
+                    Haz clic aquí para ver el video de este proyecto.
+                </a>
+            </div>
+        </div>
+    
+        <div class="project">
+            <div class="project-box" onclick="toggleMedia('image3')">
+                <h3>Proyecto 3</h3>
+                <p class="project-description">
+                    Este proyecto fue creado en el primer semestre de la Universidad, y consistió 
+                    en un intento de creación de una aplicación de educación personalizada, en el 
+                    cual se integró una inteligencia artificial que ayudara a dar recomendaciones 
+                    de estudio a las personas en el área requerida. Además, se integró un inicio 
+                    de sesión a la app para garantizar la privacidad del usuario. Las tecnologías 
+                    utilizadas en la creación de la aplicación fueron Visual Studio, donde se utilizó 
+                    JavaScript, HTML y CSS. El rol que tuve en este proyecto fue hacer funcionar el 
+                    inicio de sesión de la aplicación, así como organizar el diseño de la app. 
+                    <br><br><strong>Haz clic para ver la imagen del logo de este proyecto.</strong>
+                </p>
+            </div>
+            <img id="image3" src="/img/proyecto_3.png" alt="Proyecto 3" class="hidden project-image">
+        </div>
+    </section>
+
+
+    <section class="hobbies" id="hobbies">
+        <h2>Mis Hobbies</h2>
+    
+        <div class="hobbies-container">
+            <div class="hobby-box">
+                <img src="/img/Futbol2.jpg" alt="Fútbol">
+                <h3>Jugar y Ver Deportes</h3>
+                <p>Sin lugar a dudas, uno de mis hobbies favoritos es hacer deporte, pues me gusta mucho ir 
+                    al gimnasio, jugar fútbol y jugar tenis. Son momentos muy importantes para mí,
+                    ya que son momentos en los que salgo de la rutina diaria y hago algo que 
+                    despeja mi mente y me favorece física y mentalmente. Adicionalmente, no solo me gusta 
+                    practicar deporte sino también verlos, en especial el fútbol (e ir al estadio), y es 
+                    sinceramente una actividad en la que dedico mucho de mi tiempo cuando no 
+                    tengo algo en específico que hacer.                 </p>
+            </div>
+    
+            <div class="hobby-box">
+                <img src="/img/hq720.jpg" alt="Videojuegos">
+                <h3> Jugar Videojuegos y Escuchar Música</h3>
+                <p>Disfruto demaisado jugar videojuegos de estrategia, deportes y aventura en mi play con
+                mis amigos y con mi hermano, ya que es una actividad que me entretiene mucho. También me gusta 
+                escuchar música, la cual es una actividad que hago casi todos los días y que me ayuda a entretenerme
+                un poco y a liberar la mente. Además, escucho música siempre que estoy en el gimansio o que voy a hacer 
+                un viaje. 
+                </p>
+            </div>
+    
+            <div class="hobby-box">
+                <img src="/img/PHOTO-2025-03-01-11-52-01.jpg" alt="Viajar">
+                <h3>Viajar</h3>
+                <p>Otro de los hobbies que tengo es viajar alrededor de Colombia y del 
+                mundo con mi familia. Es una actividad que solemos hacer algunas 
+                veces en el año para descansar (lo cual es muy importante) e 
+                indudablemente conocer algunas maravillas que nos rodean en este
+                mundo. También es muy gratificante conocer diversas culturas y sitios nuevos
+                con la mejor compañía, que siempre va a ser la familia.
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+
+        <h2 class="heading">Contáctame</h2>
+        <form action="https://formspree.io/f/mwpvgbgw"
+        method="post">
+        
+            <div class="input-box">
+                <input type="text" name="Nombre" placeholder="Nombre" required>
+                <input type="email" name="Email" placeholder="Email" required>
+                <input type="numero" name="Teléfono" placeholder="Número de Teléfono" required>
+                <input type="text" name="Asunto" placeholder="Asunto" required>
+
+            </div>
+            <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Escribe tu mensaje aquí" ></textarea>
+            <input type="submit" value="Enviar Mensaje" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://instagram.com/sebasgiraldo1105"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/sebasgiraldo69"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="copyright">
+            © SGF | All Right Reserved  
+        </p>
+    </footer>
+
+</body>
+</html>
